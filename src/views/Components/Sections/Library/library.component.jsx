@@ -27,6 +27,7 @@ export default function Library() {
           {database.map(book => (
             <GridItem xs={12} sm={12} md={6}>
               <LibraryCard
+                key={book.id}
                 title={book.title}
                 author={book.author}
                 synopsis={book.synopsis}
