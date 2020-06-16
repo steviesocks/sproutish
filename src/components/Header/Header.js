@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory, Link } from 'react-router-dom';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -17,6 +18,7 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
 import Logo from '../Logo/Logo.component';
+
 
 
 const useStyles = makeStyles(styles);
@@ -67,7 +69,7 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Logo LogoIsBlack={logoIsBlack} height="60" brand={brand} />
+  const brandComponent = <Link to="/browse"><Logo LogoIsBlack={logoIsBlack} height="60" brand={brand} /></Link>
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
@@ -13,7 +14,10 @@ const LibraryCard = (props) => {
   const [expand, setExpand] = useState(false);
   const { title, author, synopsis, reader, imageUrl, coverUrl } = props;
 
-  console.log("library-card classes", classes);
+  let history = useHistory();
+  const handleWatchButton = () => {
+    history.push("/player")
+  }
 
   const handleExpand = () => {
     expand ? setExpand(false) : setExpand(true);
@@ -47,7 +51,10 @@ const LibraryCard = (props) => {
               />
               {expand ? "Collapse" : "Info"}
             </Button>
-            <Button color="primary">
+            <Button 
+              color="primary"
+              onClick={handleWatchButton}
+            >
               <i className="fas fa-play" />
               Watch Now
             </Button>

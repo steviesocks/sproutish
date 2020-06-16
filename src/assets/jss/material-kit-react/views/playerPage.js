@@ -1,6 +1,7 @@
 import { container, title } from "assets/jss/material-kit-react.js";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
+import { relativeTimeRounding } from "moment";
 
 const profilePageStyle = {
   container,
@@ -56,6 +57,15 @@ const profilePageStyle = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
+  },
+  playerWrapper: {
+    position: "relative",
+    paddingTop: "56.25%"
+  },
+  reactPlayer: {
+    position: "absolute",
+    top: "0",
+    left: "0"
   }
 };
 
