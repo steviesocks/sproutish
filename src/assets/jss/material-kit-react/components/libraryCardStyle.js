@@ -22,6 +22,7 @@ const libraryCardStyle = {
     color: "white",
     textShadow: "2px 2px 5px #000",
     width: "100%",
+    fontSize: "2rem"
   },
   bookInfo: {
     backgroundColor: "rgba(0,0,0,.3)",

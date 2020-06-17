@@ -19,7 +19,6 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection.js";
 import Library from "views/Components/Sections/Library/library.component";
 
 
@@ -41,7 +40,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Kidivist"
+        brand="Sproutish"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -88,7 +87,6 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <Library />
           <TeamSection />
-          <WorkSection />
         </div>
       </div>
       <Footer />
