@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -23,11 +23,28 @@ const useStyles = makeStyles(styles);
 export default function ProfilePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const { videoId } = useParams();
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+  const [videoProps, setVideoProps] = useState([]);
+  const [videoIdParam, setVideoIdParam] = useState(videoId);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/player", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: videoIdParam,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => setVideoProps(data[0]));
+  }, [videoIdParam]);
+
+  console.log("DEV LOG videoProps", videoProps);
   return (
     <div>
       <Header
@@ -43,7 +60,6 @@ export default function ProfilePage(props) {
       />
       <Parallax small filter image={require("assets/img/bundo-bg.jpg")} />
 
-
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -52,16 +68,16 @@ export default function ProfilePage(props) {
                 <div className={classes.profile}>
                   <div>
                     <img
-                      src="https://i.ibb.co/SRbv9r2/marlonbundo.jpg"
+                      src={videoProps.cover_url}
                       alt="..."
                       className={imageClasses}
                     />
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>
-                      A Day in the Life of Marlon Bundo
+                      {videoProps.title}
                     </h3>
-                    <h6>by John Oliver, read by Rachael Duddy</h6>
+                    <h6>{`by ${videoProps.author}, read by ${videoProps.reader}`}</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -81,7 +97,7 @@ export default function ProfilePage(props) {
                 <div className={classes.playerWrapper}>
                   <ReactPlayer
                     className={classes.reactPlayer}
-                    url="https://www.youtube.com/watch?v=-0o5LSi9wks&feature=youtu.be"
+                    url={videoProps.video_url}
                     width="100%"
                     height="100%"
                     controls={true}
@@ -91,13 +107,7 @@ export default function ProfilePage(props) {
               </GridItem>
               <div className={classes.description}>
                 <p>
-                  Meet Marlon Bundo, a lonely bunny who lives with his Grampa,
-                  Mike Pence - the Vice President of the United States. But on
-                  this Very Special Day, Marlon's life is about to change
-                  forever... With its message of tolerance and advocacy, this
-                  charming children's book explores issues of same sex marriage
-                  and democracy. Sweet, funny, and beautifully illustrated, this
-                  book is dedicated to every bunny who has ever felt different.
+                  {videoProps.synopsis}
                 </p>
               </div>
             </GridContainer>

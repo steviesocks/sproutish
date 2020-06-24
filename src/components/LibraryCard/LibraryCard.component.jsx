@@ -12,11 +12,12 @@ const useStyles = makeStyles(styles);
 const LibraryCard = (props) => {
   const classes = useStyles();
   const [expand, setExpand] = useState(false);
-  const { title, author, synopsis, reader, imageUrl, coverUrl } = props;
+  const { id, title, author, synopsis, reader, imageUrl, coverUrl } = props;
 
   let history = useHistory();
+  
   const handleWatchButton = () => {
-    history.push("/player")
+    history.push(`/player/${id}`)
   }
 
   const handleExpand = () => {
