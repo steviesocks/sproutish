@@ -6,12 +6,12 @@ import { Router, Route, Switch } from "react-router-dom";
 import "assets/scss/material-kit-react.scss?v=1.9.0";
 
 // pages for this product
-import Components from "views/Components/Components.js";
+import App from "App.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
 import PlayerPage from "views/PlayerPage/PlayerPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 
-var hist = createBrowserHistory();
+let hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/browse" component={LandingPage} />
       <Route path="/player/:videoId" component={PlayerPage} />
       <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
+      <Route path="/" component={App} />
     </Switch>
   </Router>,
   document.getElementById("root")

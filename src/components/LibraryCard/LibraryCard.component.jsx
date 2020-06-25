@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
@@ -15,10 +15,10 @@ const LibraryCard = (props) => {
   const { id, title, author, synopsis, reader, imageUrl, coverUrl } = props;
 
   let history = useHistory();
-  
+
   const handleWatchButton = () => {
-    history.push(`/player/${id}`)
-  }
+    history.push(`/player/${id}`);
+  };
 
   const handleExpand = () => {
     expand ? setExpand(false) : setExpand(true);
@@ -32,14 +32,14 @@ const LibraryCard = (props) => {
       >
         <CardBody className={classes.bookCard}>
           <h4 className={classes.bookTitle}>{title}</h4>
-          <div className={classes.bookInfo}>
-            {expand ? 
+          <div className={expand ? classes.bookInfo : null}>
+            {expand ? (
               <div>
                 <p>{`by ${author}`}</p>
                 <p>{`read by ${reader}`}</p>
                 <p>{synopsis}</p>
               </div>
-            : null}
+            ) : null}
           </div>
           <div className={classes.bookCardButtons}>
             <Button color="white" simple onClick={handleExpand}>
@@ -52,10 +52,7 @@ const LibraryCard = (props) => {
               />
               {expand ? "Collapse" : "Info"}
             </Button>
-            <Button 
-              color="primary"
-              onClick={handleWatchButton}
-            >
+            <Button color="primary" onClick={handleWatchButton}>
               <i className="fas fa-play" />
               Watch Now
             </Button>

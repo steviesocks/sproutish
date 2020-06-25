@@ -17,6 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/playerPage.js";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop.component";
 
 const useStyles = makeStyles(styles);
 
@@ -47,6 +48,7 @@ export default function ProfilePage(props) {
   console.log("DEV LOG videoProps", videoProps);
   return (
     <div>
+      <ScrollToTop />
       <Header
         color="transparent"
         brand="Material Kit React"
@@ -58,7 +60,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/bundo-bg.jpg")} />
+      <Parallax small filter image={videoProps.hero_img_url} />
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
