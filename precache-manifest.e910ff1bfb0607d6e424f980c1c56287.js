@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6738ec95a902ec48aa634fe79bb76ed",
+    "revision": "994b0feab55309224d6586d87cbff1ce",
     "url": "/sproutish/index.html"
   },
   {
-    "revision": "2de06cd8e0dd731dd630",
+    "revision": "6a606303743e47fddebd",
     "url": "/sproutish/static/css/main.126c14d6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sproutish/static/js/2.11e4c554.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2de06cd8e0dd731dd630",
-    "url": "/sproutish/static/js/main.b7d3a110.chunk.js"
+    "revision": "6a606303743e47fddebd",
+    "url": "/sproutish/static/js/main.215aee71.chunk.js"
   },
   {
     "revision": "2b1e6888c4a932b88b82",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sproutish/static/css/main.126c14d6.chunk.css",
-    "main.js": "/sproutish/static/js/main.b7d3a110.chunk.js",
-    "main.js.map": "/sproutish/static/js/main.b7d3a110.chunk.js.map",
+    "main.js": "/sproutish/static/js/main.215aee71.chunk.js",
+    "main.js.map": "/sproutish/static/js/main.215aee71.chunk.js.map",
     "runtime-main.js": "/sproutish/static/js/runtime-main.77c2f3ca.js",
     "runtime-main.js.map": "/sproutish/static/js/runtime-main.77c2f3ca.js.map",
     "static/js/2.11e4c554.chunk.js": "/sproutish/static/js/2.11e4c554.chunk.js",
     "static/js/2.11e4c554.chunk.js.map": "/sproutish/static/js/2.11e4c554.chunk.js.map",
     "index.html": "/sproutish/index.html",
-    "precache-manifest.c8361bf5faa0906349053aef51534bc5.js": "/sproutish/precache-manifest.c8361bf5faa0906349053aef51534bc5.js",
+    "precache-manifest.e910ff1bfb0607d6e424f980c1c56287.js": "/sproutish/precache-manifest.e910ff1bfb0607d6e424f980c1c56287.js",
     "service-worker.js": "/sproutish/service-worker.js",
     "static/css/main.126c14d6.chunk.css.map": "/sproutish/static/css/main.126c14d6.chunk.css.map",
     "static/js/2.11e4c554.chunk.js.LICENSE.txt": "/sproutish/static/js/2.11e4c554.chunk.js.LICENSE.txt",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.77c2f3ca.js",
     "static/js/2.11e4c554.chunk.js",
     "static/css/main.126c14d6.chunk.css",
-    "static/js/main.b7d3a110.chunk.js"
+    "static/js/main.215aee71.chunk.js"
   ]
 }
