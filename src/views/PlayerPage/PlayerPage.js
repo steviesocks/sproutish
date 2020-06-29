@@ -34,7 +34,7 @@ export default function ProfilePage(props) {
   const [videoIdParam, setVideoIdParam] = useState(videoId);
 
   useEffect(() => {
-    fetch("http://localhost:3000/player", {
+    fetch("https://tranquil-lake-84777.herokuapp.com/player", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

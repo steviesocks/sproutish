@@ -53,9 +53,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={8}>
-              <h1 className={classes.title}>Children's Books With A Social Conscience.</h1>
+              <h1 className={classes.title}>Raising allies with storytelling</h1>
               <h4>
-                Here{"'"}s a bunch of text talking about what we're doing and why people might want to watch our videos. We've got some big ideas to share with the world here...
+                <strong>Children's books for social justice, read aloud on video. Start a conversation. Open a heart.</strong>
               </h4>
               <br />
               <Button
