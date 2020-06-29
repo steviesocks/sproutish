@@ -4,15 +4,17 @@
   "description": "books with a social conscience",
   "private": true,
   "main": "src/index.js",
-  "homepage": "https://sproutish.herokuapp.com/",
+  "homepage": "https://myusername.github.io/sproutish",
   "dependencies": {
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
     "classnames": "2.2.6",
+    "gh": "^2.8.8",
     "history": "4.10.1",
     "moment": "2.26.0",
     "node-sass": "4.14.1",
     "nouislider": "14.5.0",
+    "pages": "0.0.16",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-datetime": "2.16.3",
@@ -40,6 +42,8 @@
     "typescript": "3.9.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
