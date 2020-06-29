@@ -21,7 +21,7 @@ export default function Library() {
   const [libraryFilter, setLibraryFilter] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/browse", {
+    fetch("https://tranquil-lake-84777.herokuapp.com/browse", {
       method: "get",
     })
       .then((response) => response.json())
