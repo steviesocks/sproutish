@@ -4,7 +4,7 @@ import { Route, useHistory } from 'react-router-dom';
 
 export default function App() {
     const history = useHistory();
-    history.push('/browse')
+    history.push('sproutish/browse')
 
     return null;
 }
