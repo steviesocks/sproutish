@@ -4,6 +4,7 @@
   "description": "books with a social conscience",
   "private": true,
   "main": "src/index.js",
+  "homepage": "https://sproutish.herokuapp.com/",
   "dependencies": {
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
