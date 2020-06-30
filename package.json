@@ -3,6 +3,7 @@
   "version": "1.9.0",
   "description": "books with a social conscience",
   "private": true,
+  "homepage": "https://sproutish.herokuapp.com/",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.10.0",
