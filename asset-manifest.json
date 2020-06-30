@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/sproutish/static/css/main.126c14d6.chunk.css",
+    "main.js": "/sproutish/static/js/main.215aee71.chunk.js",
+    "main.js.map": "/sproutish/static/js/main.215aee71.chunk.js.map",
+    "runtime-main.js": "/sproutish/static/js/runtime-main.77c2f3ca.js",
+    "runtime-main.js.map": "/sproutish/static/js/runtime-main.77c2f3ca.js.map",
+    "static/js/2.11e4c554.chunk.js": "/sproutish/static/js/2.11e4c554.chunk.js",
+    "static/js/2.11e4c554.chunk.js.map": "/sproutish/static/js/2.11e4c554.chunk.js.map",
+    "index.html": "/sproutish/index.html",
+    "precache-manifest.e910ff1bfb0607d6e424f980c1c56287.js": "/sproutish/precache-manifest.e910ff1bfb0607d6e424f980c1c56287.js",
+    "service-worker.js": "/sproutish/service-worker.js",
+    "static/css/main.126c14d6.chunk.css.map": "/sproutish/static/css/main.126c14d6.chunk.css.map",
+    "static/js/2.11e4c554.chunk.js.LICENSE.txt": "/sproutish/static/js/2.11e4c554.chunk.js.LICENSE.txt",
+    "static/media/avatar.jpg": "/sproutish/static/media/avatar.f1d71f77.jpg",
+    "static/media/bg7.jpg": "/sproutish/static/media/bg7.b08234a2.jpg",
+    "static/media/christian.jpg": "/sproutish/static/media/christian.56633ed3.jpg",
+    "static/media/kendall.jpg": "/sproutish/static/media/kendall.e0508cc9.jpg",
+    "static/media/landing-bg.png": "/sproutish/static/media/landing-bg.32ad5b43.png",
+    "static/media/sproutish-logo-black.png": "/sproutish/static/media/sproutish-logo-black.7b49f7fa.png",
+    "static/media/sproutish-logo-white.png": "/sproutish/static/media/sproutish-logo-white.6a390270.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77c2f3ca.js",
+    "static/js/2.11e4c554.chunk.js",
+    "static/css/main.126c14d6.chunk.css",
+    "static/js/main.215aee71.chunk.js"
+  ]
+}
