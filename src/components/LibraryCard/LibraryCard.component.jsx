@@ -17,7 +17,7 @@ const LibraryCard = (props) => {
   let history = useHistory();
 
   const handleWatchButton = () => {
-    history.push(`sproutish/player/${id}`);
+    history.push(`/player/${id}`);
   };
 
   const handleExpand = () => {

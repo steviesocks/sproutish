@@ -4,7 +4,6 @@
   "description": "books with a social conscience",
   "private": true,
   "main": "src/index.js",
-  "homepage": "https://steviesocks.github.io/sproutish/",
   "dependencies": {
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
@@ -43,8 +42,6 @@
     "typescript": "3.9.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
